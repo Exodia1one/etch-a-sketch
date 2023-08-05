@@ -17,7 +17,6 @@ let gridless = false;
 //main function that sets default grid to 16x16 and attaches mouse down listeners to buttons
 function main() {
     defaultGrid();
-    gridMode();
     slider.addEventListener('click', function() {
         generateDimension(16);
     })
@@ -25,7 +24,7 @@ function main() {
         generateDimension(32);
     })
     large.addEventListener('click', function() {
-        generateDimension(60);
+        generateDimension(64);
     })
     eraser.addEventListener('click', () => {
         eraserMode('white');
@@ -96,7 +95,7 @@ function generateDimension(num) {
         gridCreator();
     } else if (num == 32) {
         gridCreator();
-    } else if (num == 60) {
+    } else if (num == 64) {
         gridCreator();
     }
 }
